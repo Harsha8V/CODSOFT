@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="header">
+      <div class="left">Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="first" id="home">
+        <div class="leftsection">
+          Hi, My name is <span class="name">Dulquer Salman</span>
+          <div>I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="https://www.redeyedesign.co.nz/wp-content/uploads/We-Do-Web-Design.png" alt="">
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-left">
+          <div class="about-content">
+            <h2>ABOUT ME</h2>
+            <p>
+              I am Dulquer Salman, 2nd-year student pursuing a degree in Computer Science and Engineering (CSE) at SRM Chennai University, specializing in Artificial Intelligence and Machine Learning (AI/ML). Alongside my academic journey, I am deeply invested in web development and the emerging field of prompt engineering.
+              When I am not coding I do love to play games both indoor and outdoor. Supporting Benfica is like a fever dream for me but once a red always a red.
+            </p>
+          </div>
+          <div class="skills">
+            <p class="skills-heading" onclick="toggleSkills()">Skills</p>
+            <ul class="skills-list" id="skillsList">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>React</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsHaM-QIPDfcoluT244sc2XwKTk91Auszh7Q&s" alt="Professional thinking man">
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">MY WORK</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="https://i.pinimg.com/736x/a5/45/72/a5457204351d0c6011cf205edcdda7ac.jpg">
+              <div class="layer">
+                <h3>Cars App</h3>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="https://w0.peakpx.com/wallpaper/432/967/HD-wallpaper-mobile-music.jpg">
+              <div class="layer">
+                <h3>Music App</h3>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="https://www.shutterstock.com/shutterstock/videos/3618563347/thumb/1.jpg?ip=x480">
+              <div class="layer">
+                <h3>Online Shopping app</h3>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">SEE MORE</a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>dulquer746mm@gmail.com</p>
+              <p><i class="fa-solid fa-phone-volume"></i>7702448262</p>
+              <div class="social-icons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <a href="https://pbs.twimg.com/media/FyuheLFWwAEj2OO.jpg" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'UI/UX designer'],
+        typeSpeed: 70,
+      });
+
+      function toggleSkills() {
+        const list = document.getElementById('skillsList');
+        list.classList.toggle('show');
+      }
+    </script>
+  </body>
+</html>
